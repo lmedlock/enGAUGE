@@ -32,24 +32,26 @@
                         $('#' + id).css('left',670);
                     }
                     
-                    switch(proj){
-                        case '0': $('#' + id).css('bottom',490);
-                        break;
-                        case '1': $('#' + id).css('bottom',430);
-                        break;
-                        case '2': $('#' + id).css('bottom',370);
-                        break;
-                        case '3': $('#' + id).css('bottom',310);
-                        break;
-                        case '4': $('#' + id).css('bottom',250);
-                        break;
-                        case '5': $('#' + id).css('bottom',190);
-                        break;
-                        case '6': $('#' + id).css('bottom',130);
-                        break;
-                        default: $('#' + id).css('bottom',70);
-                        break;
-                    }
+                    if (proj <=7){
+                        switch(proj){
+                            case '0': $('#' + id).css('bottom',460);
+                            break;
+                            case '1': $('#' + id).css('bottom',400);
+                            break;
+                            case '2': $('#' + id).css('bottom',340);
+                            break;
+                            case '3': $('#' + id).css('bottom',290);
+                            break;
+                            case '4': $('#' + id).css('bottom',220);
+                            break;
+                            case '5': $('#' + id).css('bottom',160);
+                            break;
+                            case '6': $('#' + id).css('bottom',100);
+                            break;
+                            case '7': $('#' + id).css('bottom',40);
+                            break;
+                        }
+                    }else {$('#'+id).css('bottom',40);}
                 }
                 
                 expSkill(expOne,projOne,'user-1');
@@ -90,10 +92,10 @@
                     <div class="line"></div>
                     <div id="graph">
                         <img src="engauge.png"/>
-                        <img id="user-1" src="user-1.png"/></div>
-                        <img id="user-2" src="user-2.png"/></div>
-                        <img id="user-3" src="user-3.png"/></div>
-                        <img id="user-4" src="user-4.png"/></div>
+                        <img id="user-1" src="user-1.png" title="Team Member #1"/>
+                        <img id="user-2" src="user-2.png" title="Team Member #2"/>
+                        <img id="user-3" src="user-3.png" title="Team Member #3"/>
+                        <img id="user-4" src="user-4.png" title="Team Member #4"/>
                     </div>
                     <div id="teamInfo">
                         <h3>Team Info</h3>
